@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="interfaz.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-danger" href="#"><strong>Noentiendo</strong></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" aria-current="page" href="#">Principal</a>
+              <a class="nav-link active" href="#">Compra</a>
+              <a class="nav-link" href="#">Catalogo</a>
+              <a class="nav-link" aria-disabled="true">Salir</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 py-4 bg-white" >
+                <h2 class="text-warning"><strong>Formulario de compra de videojuegos</strong></h2>
+                <form action="">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label text-secondary"><strong>Nombre</strong></label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombre del comprador" autofocus>
+                      </div>
+            
+                      <div class="mb-3">
+                        <label for="juego" class="form-label text-secondary"><strong>Video Juego</strong></label>
+                        <select class="form-select" id="juego" rows="3" placeholder="Nombre del Videojuego">
+                           <option><a href="images/1_K5CYLD3QU4QL9Uee2mmj0g.png"></a>FIFA 25</option>
+                           <option>Carlos Duty</option>
+                           <option>GTA VIII</option>
+                           <option>Buscaminas</option>
+                        </select>
+                      </div>
+                      <div class="mb-3">
+
+                      <label for="copias" class="form-label text-secondary"><strong>Número de copias</strong></label>
+                        <input type="number" class="form-control" id="copias" >
+                      
+                      </div>
+                      
+                      <div class="boton d-grid gap-2">
+
+                        <button class="btn btn-outline-success btn-lg">Guardar</button>
+                        <button class="btn btn-outline-danger btn-lg">Limpiar</button>
+
+                      </div>
+                </form>
+            </div>
+
+            <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 py-4 bg-white">
+                <h2 class="text-info"><strong>Listado de Ventas</strong></h2>
+                <table class="table table-hover" >
+                    <thead>
+                        <tr">
+                            <th class="centrado">Logo</th>
+                            <th class="centrado">Videojuego</th>
+                            <th class="centrado">Copias Vendidas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-secundary">
+                            <td class="centrado"><img src="images/1_K5CYLD3QU4QL9Uee2mmj0g.png" alt="" class="FIFA"></td>
+                            <td class="centrado">FIFA 25</td>
+                            <td class="centrado">5</td>
+                        </tr>
+
+                        <tr class="table-primary">
+                           <td class="centrado"><img src="images/5b930abf0c6a8.jpeg" class="Carlos"></td> 
+                           <td class="centrado">Carlos Duty</td>
+                            <td class="centrado">765</td>
+                        </tr>
+
+                        <tr class="table-secundary">
+                            <td class="centrado"><img src="images/images.jpg" alt="" class="GTAVIII"></td>
+                            <td class="centrado">GTA VIII</td>
+                            <td class="centrado">189</td>
+                        </tr>
+
+                        <tr class="table-primary">
+                            <td class="centrado"><img src="images/buscaminas-2-logo.png" alt="" class="minas"></td>
+                            <td class="centrado">Buscaminas</td>
+                            <td class="centrado">1001</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
